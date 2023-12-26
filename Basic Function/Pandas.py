@@ -41,12 +41,19 @@ df.columns = ['Name','Price','Year','Age']
 # change the name of the columns in the table (number must be matched)
 df = df.astype({'Name':'string','Price':'float64','Year':'category','Age':'int64'})
 # change the type of columns in the table
+df['Price']=pd.to_numeric(df['Price'])
+# turn a column into a numeric one
 df = df.replace('a','b')
 # replace all 'a' in the table with 'b'
 # work with np => df = df.replace('?',np.NaN) => replace ? with the missing value expression of np
+df = df.drop(['Name','Age'],axis=1)
+# delete columns from the table
+df = df.append(A)
+# add a column to the table (row number must be matched)
 
 df['Year'].hist(bins=5)
 # histogram of the column
 df['Year'].boxplot()
 # boxplot of the column
-
+df.boxplot(figsize=(20,3))
+# boxplot of all numeric columns in the table (better have similar resolvation)
