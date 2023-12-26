@@ -32,8 +32,12 @@ df[['Name','Year']]
 df.loc[(df['Year']=='2020')&(df['Age']>50)]
 # query the table with one or more columns' value
 
+
+df.columns = ['Name','Price','Year','Age']
+# change the name of the columns in the table (number must be matched)
 df=df.astype({'Name':'string','Price':'float64','Year':'category','Age':'int64'})
 # change the type of columns in the table
+
 
 df['Year'].hist(bins=5)
 # histogram of the column
