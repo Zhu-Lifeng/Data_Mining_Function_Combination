@@ -17,6 +17,9 @@ print(df['Price'].median())
 print(df['Price'].mode())
 print(df['Price'].std())
 print(df['Price'].var())
-# show the min/max/mean/median/mode/standard deviation/variance of the column
+print(df['Price'].value_count())
+# show the min/max/mean/median/mode/standard deviation/variance/unique value count of the column
+
+
 df=df.astype({'Name':'string','Price':'float64','Year':'category','Age':'int64'})
 #change the type of columns in the table
