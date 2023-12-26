@@ -35,7 +35,10 @@ df['Name'].isna()
 # assign all missing value row of the column with 1, others with 0 (work with np.NaN)
 df['Name'].isna().sum()
 # get the number of missing value in this column
-
+df['Name'].duplicated()
+# assign all duplicated value row of the column with 1, others with 0
+df['Name'].duplicated().sum()
+# get the number of duplicated value in this column
 
 df.columns = ['Name','Price','Year','Age']
 # change the name of the columns in the table (number must be matched)
