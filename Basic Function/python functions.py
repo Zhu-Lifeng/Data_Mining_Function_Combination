@@ -3,3 +3,6 @@ print('A is {:.2f}'.format(x))
 
 print('A is %d'%(x))
 #print the sentence with the number keeping no decimal
+
+a[1]
+# the 2nd value of a tuple
