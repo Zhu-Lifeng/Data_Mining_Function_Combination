@@ -16,3 +16,10 @@ data =data.dropna()
 # delete all the missing value rows
 # work with np.NaN
 # work for 1-dimensional data
+
+for i in df['file_path']:
+    if df[df['file_path']==i].isnull().sum().any()>0:
+        df.drop(df[df['file_path']==i].index,inplace=True)
+df.reset_index(drop=True, inplace=True)
+# delete all the rows that contains missing value in some column
+# work foe table data
