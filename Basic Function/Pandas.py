@@ -37,6 +37,10 @@ df.loc[(df['Year']=='2020')&(df['Age']>50)]
 # query the table with one or more columns' value
 df.loc[[11,29]]
 # query the table with index (in this case 11 and 29)
+df['Age'].isin([1,2,3,4])
+# get all rows with the value 1,2,3,4
+
+
 df['Name'].isna()
 # assign all missing value row of the column with 1, others with 0 (work with np.NaN)
 df['Name'].isna().sum()
@@ -45,6 +49,7 @@ df['Name'].duplicated()
 # assign all duplicated value row of the column with 1, others with 0
 df['Name'].duplicated().sum()
 # get the number of duplicated value in this column
+
 
 df.columns = ['Name','Price','Year','Age']
 # change the name of the columns in the table (number must be matched)
