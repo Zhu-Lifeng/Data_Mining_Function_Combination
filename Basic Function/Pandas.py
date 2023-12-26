@@ -31,6 +31,8 @@ df[['Name','Year']]
 # get multiple columns form the table
 df.loc[(df['Year']=='2020')&(df['Age']>50)]
 # query the table with one or more columns' value
+df.loc[[11,29]]
+# query the table with index (in this case 11 and 29)
 df['Name'].isna()
 # assign all missing value row of the column with 1, others with 0 (work with np.NaN)
 df['Name'].isna().sum()
