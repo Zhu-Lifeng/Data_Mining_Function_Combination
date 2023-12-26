@@ -19,7 +19,12 @@ print(df['Price'].std())
 print(df['Price'].var())
 print(df['Price'].value_count())
 # show the min/max/mean/median/mode/standard deviation/variance/unique value count of the column
-
+df['Name']
+# get one column from the table
+df[['Name','Year']]
+# get multiple columns form the table
+df.loc[(df['Year']=='2020')&(df['Age']>50)]
+# query the table with one or more columns' value
 
 df=df.astype({'Name':'string','Price':'float64','Year':'category','Age':'int64'})
 #change the type of columns in the table
