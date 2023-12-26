@@ -29,6 +29,10 @@ df['Name']
 # get one column from the table
 df[['Name','Year']]
 # get multiple columns form the table
+df.index
+# get the index of the table
+df.index= pd.to_datatime(df['Date'])
+# set the index into the date
 df.loc[(df['Year']=='2020')&(df['Age']>50)]
 # query the table with one or more columns' value
 df.loc[[11,29]]
@@ -48,6 +52,9 @@ df = df.astype({'Name':'string','Price':'float64','Year':'category','Age':'int64
 # change the type of columns in the table
 df['Price']=pd.to_numeric(df['Price'])
 # turn a column into a numeric one
+df['Date']=pd.to_datatime(df['Date'])
+# turn a column into a numeric one
+
 df = df.replace('a','b')
 # replace all 'a' in the table with 'b'
 # work with np => df = df.replace('?',np.NaN) => replace ? with the missing value expression of np
