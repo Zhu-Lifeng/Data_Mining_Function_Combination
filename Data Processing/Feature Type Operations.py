@@ -6,3 +6,6 @@ df['Price']=pd.to_numeric(df['Price'])
 # turn a column into a numeric one
 df['Date']=pd.to_datatime(df['Date'])
 # turn a column into a numeric one
+
+df['Year']=pd.Categorical(df['Year'],ordered=True,categories=['aa','bb','cc'])
+# turn a category/namial feature into a ordinal feature
