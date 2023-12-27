@@ -60,6 +60,9 @@ df['Price']=pd.to_numeric(df['Price'])
 df['Date']=pd.to_datatime(df['Date'])
 # turn a column into a numeric one
 
+df['Year']=pd.Categorical(df['Year'],ordered=True,categories=['aa','bb','cc'])
+# turn a category/namial feature into a ordinal feature
+
 df = df.replace('a','b')
 # replace all 'a' in the table with 'b'
 # work with np => df = df.replace('?',np.NaN) => replace ? with the missing value expression of np
