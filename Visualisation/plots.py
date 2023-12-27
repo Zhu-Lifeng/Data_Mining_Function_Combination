@@ -10,6 +10,8 @@ sns.boxplot(x='Age',y='Price',data=df)
 # box plot comparing group observations by a catrgorical feature (x)
 sns.scatterplot(x='Age',y='Price',data=df)
 # scatter plot
+sns.
+
 
 import matplotlib.pyplot as plt
 plt.scatter(d['x'],d['y'],c=d['Type'],marker=markerTypes[d['Type']],s=60)
