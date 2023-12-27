@@ -32,4 +32,5 @@ sns.lineplot(x='number of clusters', y='silhouette coefficient', data=df)
 plt.xticks(df['number of clusters'])
 plt.show()
 
-# to compare the quality of clusterings of the same dataset for differ
+# to compare the quality of clusterings of the same dataset for different numbers of clusters.
+# use both sums of squared errors & silhouette coefficients
