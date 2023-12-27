@@ -12,6 +12,10 @@ dfO['Home_or_restaurant']=df['Home_or_restaurant'].apply(lambda x: 'C' if x != '
 # replace all value other than 'A' or 'B' with 'C'
 dfO['Home_or_restaurant']=dfO['Home_or_restaurant'].map({'home': 0, 'restaurant': 1})
 # replace muti-type of values with a map
+df['D']=(df['d']>5)
+# create a new categorical feature based on the logical expression
+# >,< also work for ordinal features
+
 
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
