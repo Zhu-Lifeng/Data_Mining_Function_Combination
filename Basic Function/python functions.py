@@ -6,3 +6,6 @@ print('A is %d'%(x))
 
 a[1]
 # the 2nd value of a tuple
+
+x**2
+# x*x
