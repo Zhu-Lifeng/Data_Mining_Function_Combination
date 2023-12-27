@@ -1,4 +1,8 @@
 import pandas as pd
+
+df.groupby('Age').mean()
+# make an aggregation based on the feature 'Age' (mean,sum,median,.......)
+
 daily.index = pd.to_datetime(daily['DATE'])
 # set the datetime as the index
 
