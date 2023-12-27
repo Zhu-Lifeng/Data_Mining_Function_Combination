@@ -10,7 +10,8 @@ sns.boxplot(x='Age',y='Price',data=df)
 # box plot comparing group observations by a catrgorical feature (x)
 sns.scatterplot(x='Age',y='Price',data=df)
 # scatter plot
-sns.
+sns.heatmap(dist,square=True,xticklabels=False, yticklabels=False,cmap='Blues')
+# heatmap, work for distance matrix
 
 
 import matplotlib.pyplot as plt
