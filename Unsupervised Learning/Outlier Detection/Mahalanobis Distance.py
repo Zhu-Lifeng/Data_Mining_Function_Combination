@@ -16,4 +16,4 @@ mahal = mahalanobis(x=delta, data=delta[['A', 'B', 'C']])
 outlier_score=pd.DataFrame(mahal, index=df.index,columns=['Outlier Score'])
 result = pd.concat((delta,outlier_score), axis=1)
 result.nlargest(5,'Outlier score')
-# get the samples whose outlier scores are higher than 5
+# get the 5 samples whose outlier scores are the highest
