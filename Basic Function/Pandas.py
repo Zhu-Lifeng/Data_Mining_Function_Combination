@@ -39,7 +39,8 @@ df.loc[[11,29]]
 # query the table with index (in this case 11 and 29)
 df['Age'].isin([1,2,3,4])
 # get all rows with the value 1,2,3,4
-
+df.nlargest(5,'A')
+# get the top 5 rows depending on feature A
 
 df['Name'].isna()
 # assign all missing value row of the column with 1, others with 0 (work with np.NaN)
